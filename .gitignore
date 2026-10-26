@@ -1,0 +1,14 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración local de VS Code
+.vscode/
+
+# Archivos fuente de diseño (no se suben al repositorio)
+*.psd
+
+# Archivos temporales
+*.tmp
+*.log
