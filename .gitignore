@@ -1,14 +1,15 @@
-# Archivos del sistema operativo
+# Sistema operativo
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# Configuración local de VS Code
+# Editores
 .vscode/
-
-# Archivos fuente de diseño (no se suben al repositorio)
-*.psd
-
-# Archivos temporales
+.idea/
+# Temporales
 *.tmp
+*.bak
 *.log
+# Fuentes de diseño que no forman parte del sitio publicado
+*.psd
+*.ai
+*.sketch
