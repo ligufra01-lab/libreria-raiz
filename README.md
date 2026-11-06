@@ -1,82 +1,118 @@
 # Librería Independiente Raíz
 
-Sitio estático académico para presentar la librería, reseñas de libros, agenda de actividades y formulario de contacto con validación en el navegador.
+## 1. Descripción del proyecto
 
-## Publicación
-- Repositorio: https://github.com/ligufra01-lab/libreria-raiz
-- GitHub Pages: https://ligufra01-lab.github.io/libreria-raiz/
+Librería Independiente Raíz es un sitio web estático de carácter académico, diseñado para presentar la identidad de la librería, compartir reseñas de libros, informar sobre eventos y ofrecer un formulario de contacto con validación en el navegador.
 
-Verificar la URL y el resultado del despliegue en **Settings > Pages** y **Actions** después de fusionar cambios a `main`.
+El proyecto busca ofrecer una experiencia de navegación sencilla, visualmente atractiva y adaptable a diferentes dispositivos.
 
-## Tecnologías
-HTML5, CSS3, JavaScript, Git, GitHub y GitHub Pages. No requiere dependencias ni backend para ejecutarse como prototipo.
+## 2. Publicación
 
-## Estructura
+- **Repositorio:** https://github.com/ligufra01-lab/libreria-raiz
+- **Sitio web:** https://ligufra01-lab.github.io/libreria-raiz/
+
+## 3. Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Git y GitHub
+- GitHub Pages
+
+El proyecto es estático y no requiere un backend ni dependencias adicionales para su ejecución básica.
+
+## 4. Estructura del proyecto
+
 ```text
 libreria-raiz/
 ├── index.html
-├── README.md
+├── css/
+│   └── main.css
+├── js/
+│   └── main.js
+├── img/
+│   └── logo.webp
+├── blog/
+│   └── index.html
+├── eventos/
+│   └── index.html
+├── contacto/
+│   └── index.html
+├── ACTA_CIERRE.md
+├── RETROSPECTIVA.md
 ├── .gitignore
-├── css/main.css
-├── js/main.js
-├── img/logo.webp
-├── blog/index.html
-├── eventos/index.html
-└── contacto/index.html
+└── README.md
 ```
 
-## Ejecutar en local
-1. `git clone https://github.com/ligufra01-lab/libreria-raiz.git`
-2. `cd libreria-raiz`
-3. Abrir `index.html` en el navegador o usar Live Server en Visual Studio Code.
+## 5. Cómo ejecutar el proyecto localmente
 
-## Rutas
-La página principal usa `css/main.css`, `js/main.js` e `img/logo.webp`. Las páginas internas usan rutas `../css/main.css`, `../js/main.js` y `../img/logo.webp`, compatibles con la publicación dentro de `/libreria-raiz/` en GitHub Pages.
+1. Clonar el repositorio:
 
-## Funcionalidades
-- Navegación adaptable a móviles.
-- Blog con búsqueda por título, autor y palabras clave.
-- Agenda de actividades.
-- Formulario con validación de nombre, correo, asunto, mensaje y confirmación.
+   `git clone https://github.com/ligufra01-lab/libreria-raiz.git`
 
-**Limitaciones:** el formulario no envía ni almacena mensajes; se debe conectar un servicio externo o backend para recibirlos. Las reseñas y las fechas de eventos son contenido de ejemplo y deben ser revisadas por el cliente antes de anunciarse como información real.
+2. Ingresar a la carpeta:
 
-## GitHub Flow
-1. `git switch main` y `git pull origin main`.
-2. Crear una rama por tarea, por ejemplo `git switch -c feature/blog-resenas`.
-3. Hacer cambios pequeños y probar localmente.
-4. Publicar la rama con `git push -u origin feature/blog-resenas`.
-5. Abrir Pull Request hacia `main`, solicitar revisión y verificar rutas, vista móvil y consola.
-6. Fusionar solo después de la revisión y eliminar la rama.
+   `cd libreria-raiz`
 
-Coordinar previamente los archivos que se modificarán para evitar que dos integrantes editen simultáneamente el mismo bloque de estilos.
+3. Abrir el archivo `index.html` en un navegador web.
 
-## Conventional Commits
-Formato: `tipo(alcance): descripción breve`
-- `feat(blog): agrega reseñas`
-- `feat(eventos): crea agenda`
-- `feat(contacto): incorpora formulario`
-- `fix(navegacion): corrige rutas internas`
-- `style(web): ajusta diseño adaptable`
-- `docs(readme): documenta instalación`
-- `refactor(js): organiza validaciones`
+4. También se puede utilizar Visual Studio Code con la extensión Live Server para visualizar los cambios durante el desarrollo.
 
-Tipos: `feat`, `fix`, `docs`, `style`, `refactor`.
+5. Antes de comenzar a trabajar, actualizar la versión local:
 
-## Verificación antes del despliegue
-- [ ] `index.html` está en la raíz.
-- [ ] Navegación abre las cuatro páginas.
-- [ ] Logo, CSS y JavaScript cargan sin 404.
-- [ ] Menú móvil funciona.
-- [ ] Búsqueda filtra reseñas.
-- [ ] Formulario valida entradas.
-- [ ] Se informa que el formulario no envía datos.
-- [ ] Agenda de muestra se identifica como contenido ilustrativo.
-- [ ] Actions y URL pública se revisan tras la fusión.
+   `git pull origin main`
 
-## Equipo
-- Santiago Escobar Vasco
-- Juan José Gutiérrez Franco
-- Julio Cesar Munoz
+## 6. Convención de ramas
 
-Proyecto académico — Metodología de Software, Politécnico Internacional.
+Para organizar el desarrollo y evitar modificaciones directas sobre la rama principal, se propone utilizar las siguientes convenciones:
+
+- `main`: versión estable y publicada.
+- `feature/nombre-funcionalidad`: desarrollo de nuevas funcionalidades.
+- `fix/descripcion-error`: corrección de errores.
+- `docs/descripcion`: cambios en documentación.
+
+Los cambios deben integrarse mediante Pull Requests y revisión antes de fusionarse con `main`.
+
+## 7. Conventional Commits
+
+Se utiliza como referencia la convención Conventional Commits para identificar el propósito de cada modificación.
+
+| Prefijo | Descripción |
+|---|---|
+| `feat:` | Nueva funcionalidad |
+| `fix:` | Corrección de errores |
+| `docs:` | Cambios en documentación |
+| `style:` | Ajustes de formato y presentación |
+| `refactor:` | Mejoras internas del código |
+
+Ejemplos:
+
+- `feat: agregar calendario de eventos`
+- `fix: corregir enlaces de navegación`
+- `docs: actualizar documentación del proyecto`
+
+## 8. Integrantes y responsabilidades del caso
+
+Los siguientes personajes representan los roles definidos en el escenario académico:
+
+- **Laura Restrepo:** coordinación del equipo y seguimiento del sprint.
+- **Carlos Méndez:** desarrollo e integración.
+- **Sofía Álvarez:** diseño UX/UI y adaptación responsive.
+- **Andrés Ramírez:** documentación y apoyo en pruebas.
+
+## 9. Funcionalidades y alcance
+
+El sitio cuenta con página principal, sección de reseñas, eventos y contacto.
+
+El formulario realiza validaciones en el navegador. No dispone de un servicio backend para enviar o almacenar mensajes.
+
+La integración de redes sociales, la versión en inglés y los podcasts se consideran mejoras para futuras versiones.
+
+## 10. Documentos de cierre
+
+- `ACTA_CIERRE.md`: decisiones y registro del cierre académico.
+- `RETROSPECTIVA.md`: aprendizajes, oportunidades de mejora y acciones futuras.
+
+## 11. Publicación y mantenimiento
+
+El sitio se publica mediante GitHub Pages desde el repositorio. Después de integrar cambios en la rama principal, se debe verificar el estado del despliegue en GitHub Actions o en la sección de GitHub Pages y comprobar la navegación en la URL pública.
