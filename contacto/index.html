@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contacto | Librería Raíz</title>
+    <link rel="icon" href="../img/logo.webp">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body><a class="skip" href="#main">Saltar al contenido</a>
+    <header>
+        <div class="wrap nav-wrap"><a class="brand" href="../index.html"><img src="../img/logo.webp"
+                    alt="Logotipo de Librería Raíz"><span><b>Librería</b><small>independiente</small></span></a><button
+                class="menu" aria-expanded="false" aria-controls="nav">Menú</button>
+            <nav id="nav"><a href="../index.html">Inicio</a><a href="../blog/index.html">Reseñas</a><a
+                    href="../eventos/index.html">Eventos</a><a class="active" href="index.html">Contacto</a></nav>
+        </div>
+    </header>
+    <main id="main">
+        <section class="pagehero">
+            <div class="wrap">
+                <p class="eyebrow">Hablemos</p>
+                <h1>Las buenas historias<br><em>empiezan conversando.</em></h1>
+                <p class="lead">¿Tienes una recomendación, una pregunta o una idea para compartir? Nos encantará leerte.
+                </p>
+            </div>
+        </section>
+        <section class="wrap section contact">
+            <div>
+                <p class="eyebrow">Escríbenos</p>
+                <h2>Tu mensaje<br>tiene un lugar.</h2>
+                <p class="muted">Completa el formulario y revisa que tus datos estén correctos antes de continuar.</p>
+                <div class="contact-card"><b>RAÍZ</b>
+                    <p>Una comunidad que crece con cada historia compartida.</p>
+                </div>
+            </div>
+            <form id="contact-form" novalidate>
+                <div class="two">
+                    <div><label for="name">Nombre completo *</label><input id="name" name="name" required minlength="2"
+                            autocomplete="name" placeholder="Tu nombre"><small id="name-error" class="error"></small>
+                    </div>
+                    <div><label for="email">Correo electrónico *</label><input id="email" name="email" type="email"
+                            required autocomplete="email" placeholder="nombre@correo.com"><small id="email-error"
+                            class="error"></small></div>
+                </div>
+                <div><label for="subject">Asunto *</label><input id="subject" name="subject" required minlength="3"
+                        placeholder="¿Sobre qué quieres escribir?"><small id="subject-error" class="error"></small>
+                </div>
+                <div><label for="message">Mensaje *</label><textarea id="message" name="message" rows="6" required
+                        minlength="10" placeholder="Cuéntanos un poco más..."></textarea><small id="message-error"
+                        class="error"></small></div><label class="check"><input id="privacy" type="checkbox" required>
+                    Confirmo que los datos ingresados son correctos. *</label><small id="privacy-error"
+                    class="error"></small><button class="btn" type="submit">Validar mensaje →</button>
+                <p id="feedback" aria-live="polite"></p>
+                <p class="muted note">Prototipo académico: el formulario valida los campos en el navegador, pero no
+                    envía ni almacena mensajes. Para recibirlos se debe integrar un servicio externo o backend.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap foot"><b>Librería Raíz</b><span>Historias que nos conectan.</span>
+            <div><a href="../index.html">Inicio</a><a href="../blog/index.html">Reseñas</a><a
+                    href="../eventos/index.html">Eventos</a></div><small>© 2026 Librería Independiente Raíz. Proyecto
+                académico.</small>
+        </div>
+    </footer>
+</body>
+
+</html>
