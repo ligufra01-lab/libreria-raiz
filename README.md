@@ -77,5 +77,6 @@ Tipos: `feat`, `fix`, `docs`, `style`, `refactor`.
 ## Equipo
 - Santiago Escobar Vasco
 - Juan José Gutiérrez Franco
+- Julio Cesar Munoz
 
 Proyecto académico — Metodología de Software, Politécnico Internacional.
